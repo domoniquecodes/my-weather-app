@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>My weather application</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Dosis:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Dosis:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Dosis:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Dosis:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Dosis:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Dosis:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="my-weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-bar"
+            id="search-bar"
+          />
+          <input
+            type="submit"
+            value="Search"
+            class="search-button"
+            id="search-button"
+          />
+        </form>
+      </header>
+      <hr class="header-line" />
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city" id="current-city">Paris</h1>
+            <p>
+              <span class="main-info" id="current-day-time">
+                Saturday 15:32</span
+              ><span class="main-info">, moderate rain </span>
+              <br />
+              <span class="main-info">Humidity:</span> <strong>87%</strong>
+              <span class="main-info">, Wind:</span> <strong>7.2km/h</strong>
+            </p>
+
+            <ul>
+              <li class="week-days">
+                Sun ⛅️ <br /><strong>14°C</strong> - 18°C
+              </li>
+              <li class="week-days">
+                Mon ⛅️ <br /><strong>14°C</strong> - 18°C
+              </li>
+              <li class="week-days">
+                Tue ⛅️ <br /><strong>14°C</strong> - 18°C
+              </li>
+              <li class="week-days">
+                Wed ⛅️ <br /><strong>14°C</strong> - 18°C
+              </li>
+              <li class="week-days">
+                Thu ⛅️ <br /><strong>14°C</strong> - 18°C
+              </li>
+            </ul>
+          </div>
+          <div class="todays-weather-group">
+            <span class="todays-weather-emoji" id="todays-weather-emoji"
+              >☀️</span
+            >
+            <span class="todays-weather-value" id="todays-weather-value"
+              >24</span
+            >
+            <span class="todays-weather-unit" id="todays-weather-unit">°C</span>
+          </div>
+        </div>
+      </main>
+      <hr class="footer-line" />
+      <footer>
+        <p class="footer">
+          <span class="main-info">This project was coded by</span>
+          <a href="#" target="_blank">Domonique Wilson</a>
+          <span class="main-info">and is</span>
+          <a href="#" target="_blank"> on GitHub</a>
+          <span class="main-info">and</span>
+          <a href="#" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script src="src/index.js"></script>
+</html>
